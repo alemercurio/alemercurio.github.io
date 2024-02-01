@@ -2,7 +2,7 @@
 layout: post
 title:  "Sony AI | Gastronomy Flagship Project"
 date:   2023-04-01 01:00:00 +00:00
-image: /images_/sony_heading.jpg
+image: /images/sony_heading.jpg
 categories: industry
 author: "Alessandro Mercurio"
 website: https://ai.sony/projects/gastronomy/
