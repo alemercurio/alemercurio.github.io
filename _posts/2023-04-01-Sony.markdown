@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Sony AI | Gastronomy Flagship Project"
+date:   2023-04-01 22:21:59 +00:00
+image: /images/sony_heading.jpg
+categories: industry
+author: "Alessandro Mercurio"
+website: https://ai.sony/projects/gastronomy/
+article: https://ai.sony/articles/sonyai003/
+blog: https://ai.sony/blog/blog-026/
+---
+
+We’re building robots that can manipulate various food items and cooking utensils with high precision, dexterity and speed, to assist chefs in their cooking and plating processes. 

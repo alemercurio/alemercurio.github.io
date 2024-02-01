@@ -32,24 +32,33 @@
               <h1>
                 Alessandro Mercurio 
               </h1>
-              <p>Hello there! I'm Alessandro, and I work at <a href="https://ai.sony/">Sony AI</a>.
+              <p>Hello there! I'm Alessandro, and this is my personal webpage. Welcome!</a>.
               </p>
               <p>
-                From 2018 to 2021, I have attended a B.Sc in <a href="https://www.polimi.it/futuri-studenti/corsi-di-laurea-magistrale/automation-and-control-engineering-ingegneria-dellautomazione">Control Engineering at Politecnico di Milano</a> in Italy. During my bachelor I have been a co-founder of <a href="https://www.aeapolimi.it/en/"> Automation Engineering Association @ PoliMi </a> 
+                I am a software engineer and a roboticist. I work at <a href="https://ai.sony/">Sony AI</a>
               </p>
               <p>
-                In September 2023 I earned a <a href="https://master-robotics.ethz.ch"> M.Sc. in Robotics, Systems and Control from ETH Zurich</a> in Switzerland.
-                During my master I have been a research assistant at the <a href="https://rsl.ethz.ch">Robotics Systems Lab</a> under Prof. Hutter and at <a href="https://rpg.ifi.uzh.ch"> Robotics and Perception group</a> under Prof. Scaramuzza. I have been a teaching assistant at <a href="https://idsc.ethz.ch">IDSC</a> for Duckietown course. I worked for <a href="https://studios.disneyresearch.com">Disney Research</a> in Zurich in 2022 developing algorithms for human pose estimation and animations.
+                I graduated from a Bachelor of Science in <a href="https://www.polimi.it/en/international-prospective-students/laurea-programmes-equivalent-to-bachelor-of-science/programme-catalogue/engineering-of-computing-systems"> Engineering of Computing Systems</a> at Politecnico di Milano, in Italy.
+              </p>
+              <p>
+                I am about to obtain a Master's degree in <a href="https://master-robotics.ethz.ch"> in Robotics, Systems and Control</a> from ETH Zurich in Switzerland.
+                During my studies I have been a graduate student researcher at the <a href="https://rsl.ethz.ch">Robotic Systems Lab</a> under Prof. Dr. Marco Hutter and I wrote my Master Thesis at the <a href="https://cvg.ethz.ch/"> Computer Vision and Geometry Group</a> under Prof. Pollefeyes. 
+                Furthermore, I built and programmed a driverless car with the incredible  <a href="https://www.amzracing.ch/en"> AMZ Racing</a> team.
+              </p>
+              <p>
+                Last but definetly not least, I am currently a researcher at <a href="https://ai.sony/"> Sony AI</a>, and I have worked at both the Tokyo and Zurich offices.
+              </p>
+              <p>
+                
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="mercurioalessandro99@gmail.com"> Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/alemercurio">GitHub</a> &nbsp;/&nbsp;
-                <a href="">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/alemercurio/"> LinkedIn </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images_/propic.jpg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images_/round_propic.jpg">
             </td>
           </tr>
         </table>
@@ -57,15 +66,15 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research projects</h2>
-              <p> A series of projects that worked in the research world and made it through.</p>
+              <h2>Industry</h2>
+              <p> A series of projects I conducted in companies and startups.</p>
             </td>
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          {% if cat == 'industry' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -101,6 +110,12 @@
               {% if post.youtube %}
               <a href="{{post.youtube}}">youtube</a> /
               {% endif %}
+              {% if post.article %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              {% if post.blog %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
               <p></p>
               {{ post.excerpt }}
             </td>
@@ -115,8 +130,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Company projects</h2>
-              <p> A series of projects that developed in collaboration with companies and startups.
+              <h2>Research</h2>
+              <p> A series of projects I conducted in academia.</p>
               </p>
             </td>
           </tr>
@@ -124,7 +139,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'company' %}
+          {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
