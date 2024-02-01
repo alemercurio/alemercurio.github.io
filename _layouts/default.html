@@ -32,17 +32,17 @@
               <h1>
                 Alessandro Mercurio 
               </h1>
-              <p>Hello there! I'm Alessandro, and this is my personal webpage. Welcome!</a>.
+              <p>Hello there! I'm Alessandro, and this is my personal webpage. Welcome!
               </p>
               <p>
-                I am a software engineer and a roboticist. I work at <a href="https://ai.sony/">Sony AI</a>
+                I am a software engineer and a roboticist.
               </p>
               <p>
                 I graduated from a Bachelor of Science in <a href="https://www.polimi.it/en/international-prospective-students/laurea-programmes-equivalent-to-bachelor-of-science/programme-catalogue/engineering-of-computing-systems"> Engineering of Computing Systems</a> at Politecnico di Milano, in Italy.
               </p>
               <p>
                 I am about to obtain a Master's degree in <a href="https://master-robotics.ethz.ch"> in Robotics, Systems and Control</a> from ETH Zurich in Switzerland.
-                During my studies I have been a graduate student researcher at the <a href="https://rsl.ethz.ch">Robotic Systems Lab</a> under Prof. Dr. Marco Hutter and I wrote my Master Thesis at the <a href="https://cvg.ethz.ch/"> Computer Vision and Geometry Group</a> under Prof. Pollefeyes. 
+                During my studies I have been a graduate student researcher at the <a href="https://rsl.ethz.ch">Robotic Systems Lab</a> under Prof. Dr. Marco Hutter and I wrote my Master Thesis at the <a href="https://cvg.ethz.ch/"> Computer Vision and Geometry Group</a> under Prof. Dr. Pollefeys. 
                 Furthermore, I built and programmed a driverless car with the incredible  <a href="https://www.amzracing.ch/en"> AMZ Racing</a> team.
               </p>
               <p>
@@ -58,7 +58,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images_/round_propic.jpg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images_/propic.jpg">
             </td>
           </tr>
         </table>
@@ -111,10 +111,10 @@
               <a href="{{post.youtube}}">youtube</a> /
               {% endif %}
               {% if post.article %}
-              <a href="{{post.youtube}}">youtube</a> /
+              <a href="{{post.article}}">youtube</a> /
               {% endif %}
               {% if post.blog %}
-              <a href="{{post.youtube}}">youtube</a> /
+              <a href="{{post.blog}}">youtube</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -201,65 +201,6 @@
               </p>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' %}
-          {% if cat != 'company' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.subtitle}}</em>
-              <br>
-              <br>
-              {{post.authors}}
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
         </table>
       </td>
     </tr>
