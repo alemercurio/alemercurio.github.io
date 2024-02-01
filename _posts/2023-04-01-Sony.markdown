@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Sony AI | Gastronomy Flagship Project"
+subtitle: "Gastronomy Robotics"
 date:   2023-04-01 01:00:00 +00:00
 image: /images/sony_heading.jpg
 categories: industry

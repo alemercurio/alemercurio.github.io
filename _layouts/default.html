@@ -41,8 +41,8 @@
                 I graduated from a Bachelor of Science in <a href="https://www.polimi.it/en/international-prospective-students/laurea-programmes-equivalent-to-bachelor-of-science/programme-catalogue/engineering-of-computing-systems"> Engineering of Computing Systems</a> at Politecnico di Milano, in Italy.
               </p>
               <p>
-                I am about to obtain a Master's degree in <a href="https://master-robotics.ethz.ch"> in Robotics, Systems and Control</a> from ETH Zurich in Switzerland.
-                During my studies I have been a graduate student researcher at the <a href="https://rsl.ethz.ch">Robotic Systems Lab</a> under Prof. Dr. Marco Hutter and I wrote my Master Thesis at the <a href="https://cvg.ethz.ch/"> Computer Vision and Geometry Group</a> under Prof. Dr. Pollefeys. 
+                I am about to obtain a Master's degree in <a href="https://master-robotics.ethz.ch"> Robotics, Systems and Control</a> from ETH Zurich in Switzerland.
+                During my studies I have been a graduate student researcher at the <a href="https://rsl.ethz.ch">Robotic Systems Lab</a> under Prof. Dr. Marco Hutter and I wrote my Master Thesis at the <a href="https://cvg.ethz.ch/"> Computer Vision and Geometry Group</a> under Prof. Dr. Marc Pollefeys. 
                 Furthermore, I built and programmed a driverless car with the incredible  <a href="https://www.amzracing.ch/en"> AMZ Racing</a> team.
               </p>
               <p>
@@ -82,9 +82,10 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              {{post.authors}}
+              <em>{{post.subtitle}}</em>
               <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              {{ post.date | date: "%Y-%m-%d" }}
+
               <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
