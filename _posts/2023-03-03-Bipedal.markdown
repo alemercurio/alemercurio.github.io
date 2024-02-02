@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Parameter Space Analysis for a Small Bipedal Robot using Reinforcement Learning"
+date:   2023-03-03 22:21:59 +00:00
+image: /images/bipedal.gif
+categories: research
+author: "Alessandro Mercurio"
+authors: "Alessandro Mercurio, Filip Bjelonic, Fabian Tischhauser, Marco Hutter"
+paper: /pdfs/placeolder.pdf
+youtube: https://www.youtube.com/watch?v=Afi17BnSuBM&ab_channel=NVIDIAOmniverse
+
+---
+
+We aim at taking full advantage of Reinforcement Learning (RL) in the design process of a new, small bipedal robot, with the goal of analysing which parameters should be chosen for highest performance and efficiency. Bipedal locomotion is still a challenge in robotics and current work in designing bipeds is mostly experience-based and nature-inspired. We aim at augmenting the informa-
+tion that the designer has available when choosing how to parameterize a new robot by expanding the nominal design to a varied design space and training the robot in all of its different configurations simultaneously. The obtained policies can be used
+for evaluation and comparison without the need to retrain them for every single design, helping the engineer to expedite and optimize the design process towards a bipedal robot and at the same time providing insights on how such a robot should be designed in the first place. As a result, we present a design proposal for a small bipedal robot and a design framework for continuing its development.
